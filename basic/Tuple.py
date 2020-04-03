@@ -4,13 +4,18 @@ tuple = (1, 2, 3)
 for i in tuple:
     print(i)
  '''
-input()
+
 
 list1 = [1, 2, 3]
 list2 = [4, 5, 6]
 
 tuple = (list1, list2)
+#
 tuple[0] = (9, 9, 9) #이런식으로 직접적으로 바꾸지 못함
 tuple[0][0] = 7 # list 안에 있는 값은 바꿀 수 있음
 print(tuple)
 # 자정에 신호를 대범
+
+n = 100000000
+e = (1 + (1 / n) ) ** n
+print(e)
