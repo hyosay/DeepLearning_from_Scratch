@@ -1,7 +1,9 @@
-a = "       Hello       "
-b = a.strip()
-print('my','name')
+number = int(input('정수를 입력하시오: '))
 
-import string
-print(string.ascii_lowercase)
-print(string.ascii_uppercase)
+number_string = str(number)
+
+rev_number_str = number_string[::-1]
+
+rev_number_int = int(rev_number_str)
+
+print(rev_number_int)

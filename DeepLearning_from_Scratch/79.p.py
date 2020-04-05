@@ -1,3 +1,11 @@
-import numpy as np
-A = np.array([1,2])
-print(A.shape)
+years = int(input())
+
+if years % 4 == 0:
+    if years % 100 != 0:
+        print(1)
+    elif years % 400 == 0:
+        print(1)
+    else:
+        print(0)
+else:
+    print(0)
