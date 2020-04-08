@@ -1,11 +1,12 @@
-years = int(input())
+import re
+IS_NUMERIC = "[-+]?\\d+(\\.\\d+)?$"
+inp = input("숫자를 입룍허요라 :")
 
-if years % 4 == 0:
-    if years % 100 != 0:
-        print(1)
-    elif years % 400 == 0:
-        print(1)
+if re.match(IS_NUMERIC, inp):
+    x = float(inp)
+    if x == int(x):
+        print(x, "은/는 정수입니다.")
     else:
-        print(0)
+        print(x, "은/는 실수입니다.")
 else:
-    print(0)
+    print("숫자가 아닙니다.")
