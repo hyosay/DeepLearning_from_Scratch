@@ -9,7 +9,3 @@ for i in range(0,N):
 
 
 
-B = list(map(int,input().split()))
-C = map(int,input().split())
-print(B)
-print(C)
